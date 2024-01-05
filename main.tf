@@ -68,7 +68,6 @@ resource "aws_rds_cluster" "default" {
 
 
 /* S3 */
-
 resource "aws_s3_bucket" "example" {
   bucket = "my-tf-test-bucket"
 
@@ -85,6 +84,13 @@ resource "aws_instance" "example_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "JacksBlogExample"
+    Name = "Example"
   }
+}
+
+/* SQS */
+resource "aws_sqs_queue" "fifo_example_queue" {
+  name                        = "example-queue.fifo"
+  fifo_queue                  = true
+  content_based_deduplication = true
 }
