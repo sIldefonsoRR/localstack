@@ -1,0 +1,9 @@
+# files
+.env
+.txt
+terraform.tfstate
+
+# Folders
+.venv
+.terraform
+volume
