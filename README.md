@@ -82,11 +82,13 @@ $ ``
 tflocal init
 ``
 ### Show run planning based on the config commands
-Save the plan on a file (plan001.plan)
+Save the plan on a file so it can be (re)used
 
 $ ``
-tflocal plan -out plan001.txt
+tflocal plan -out plan001.plan
 ``
+
+The plan file is named as **plan001.plan**. This is an example, but it is advisable to use a file with .plan extension.
 
 ### Run the planned actions from the file
 $ ``

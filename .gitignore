@@ -1,6 +1,6 @@
 # files
 .env
-.txt
+*.plan
 terraform.tfstate
 
 # Folders
